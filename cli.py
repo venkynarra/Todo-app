@@ -1,4 +1,4 @@
-from modules.functions import get_todos, write_todos# functions is Separate file , it is called modules
+from functions import get_todos, write_todos# functions is Separate file , it is called modules
 import time
 now = time.strftime("%b %d, %Y, %H:%M:%S")
 print("the time is", now)
