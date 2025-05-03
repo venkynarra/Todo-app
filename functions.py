@@ -1,4 +1,11 @@
-FILEPATH = "todos.txt"
+import os
+import sys
+
+if hasattr(sys, '_MEIPASS'):
+    FILEPATH = os.path.join(sys._MEIPASS, 'todos.txt')
+else:
+    FILEPATH = "todos.txt"
+
 def get_todos(filepath = FILEPATH):# this function has only one argument (I didn't mention here, (filepath is argument) )
     """reading a text file and return the list of to-do items.print(help(get_todo)) gives what get_todo to do , it helps in large code base
     """
