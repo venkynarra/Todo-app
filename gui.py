@@ -4,7 +4,7 @@ import time
 sg.theme("DarkPurple4")
 clock = sg.Text('', key = "clock" )
 label = sg.Text("Type in a to-do")
-input_box = sg.InputText(tooltip= "Enter todo", key = "todo") # key istodo here
+input_box = sg.InputText(tooltip= "Enter todo", key = "todo") # key istodo here, tooltip tell what to do like a small logo on the input box
 add_button = sg.Button("ADD") # adding button
 list_box = sg.Listbox(values = functions.get_todos(), key = "todos",
                       enable_events=True, size=[45, 10])
